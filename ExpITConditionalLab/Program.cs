@@ -20,6 +20,14 @@ namespace ExpITConditionalLab
              * ==>problem is to write a program to calculate income tax owed,
              * ==>that takes the income as a command line argument
              */
+
+            //Write a greeting and identify the purpose of the application to the user
+            Console.WriteLine("Welcome to the Tax Calculator");
+            Console.WriteLine();        //whitespace
+            Console.WriteLine("To use, please ensure income in whole dollars is entered as an argument.");
+            Console.WriteLine();
+            Console.WriteLine();
+
             if (args.Length < 1)
             {
                 //no arguments were passed in
@@ -32,10 +40,11 @@ namespace ExpITConditionalLab
                 //assume income is in whole dollars (integer)
                 int income;
 
+                //check whether the (first) argument is parsable as an integer, and store in income
                 if (!(Int32.TryParse(args[0], out income)))
                 {
                     //unable to parse a number from (first) argument
-                    Console.WriteLine("Sorry, I didn't get recognizaeble income as an argument.");               }
+                    Console.WriteLine("Sorry, I didn't get a recognizaeble income as an argument.");               }
                 else
                 {
                     //actual recognized input is now stored in income
@@ -46,18 +55,18 @@ namespace ExpITConditionalLab
                     double taxOwed = 0;
                     
                     //check whether the income meets each bracket level in turn
-                    if (income > 75000)
+                    if (income >= 75000)
                     {
                         //base tax on 75000 is 9000 (1000 + 3000 + 5000)
                         //add that to the marginal tax on income over $75000 at 35%
                         taxOwed = 9000 + (double)(income - 75000) * 0.35;
-                    } else if (income > 50000)
+                    } else if (income >= 50000)
                     {
                         //base tax on 50000 is 4000 (1000 + 3000)
                         //add that to the marginal tax on income over $50000 at 20%
                         taxOwed = 4000 + (double)(income - 50000) * 0.20;
                     }
-                    else if (income > 20000)
+                    else if (income >= 20000)
                     {
                         //base tax on 20000 is 1000
                         //add that to the marginal tax on income over $20000 at 10%
