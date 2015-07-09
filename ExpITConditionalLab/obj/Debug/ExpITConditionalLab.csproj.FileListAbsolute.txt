@@ -3,3 +3,4 @@ C:\Users\Cheryl\Documents\Visual Studio 2013\Projects\ExpITConditionalLab\ExpITC
 C:\Users\Cheryl\Documents\Visual Studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\bin\Debug\ExpITConditionalLab.pdb
 C:\Users\Cheryl\Documents\Visual Studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\obj\Debug\ExpITConditionalLab.exe
 C:\Users\Cheryl\Documents\Visual Studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\obj\Debug\ExpITConditionalLab.pdb
+C:\Users\Cheryl\Documents\Visual Studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\obj\Debug\ExpITConditionalLab.csprojResolveAssemblyReference.cache

@@ -32,6 +32,7 @@ namespace ExpITConditionalLab
             {
                 //no arguments were passed in
                 Console.WriteLine("Sorry, I didn't get income as an argument in positive whole dollars.");
+                Console.WriteLine("Please try again.");
             }
             else
             {
