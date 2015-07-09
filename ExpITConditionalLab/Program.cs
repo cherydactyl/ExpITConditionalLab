@@ -45,15 +45,11 @@ namespace ExpITConditionalLab
                 {
                     //unable to parse a number from (first) argument
                     Console.WriteLine("Sorry, unable to retrieve a number argument.  Please try again.");               }
-                //else if  (income < 0)
-                //{
-                //    //negative number parsed
-                //    Console.WriteLine("Sorry, negative income is not a valid input.  Please try again."); 
-                //
-                //    //Upon testing, it appears that when a negative number is the (first) argument,
-                //    //it is being parsed as a positive number.
-                //    //Have tested so far only using debug
-                //}
+                else if (income < 0)
+                {
+                    //negative number parsed
+                    Console.WriteLine("Sorry, negative income is not a valid input.  Please try again.");
+                }
                 else
                 {
                     //actual recognized input is now stored in income
@@ -64,23 +60,23 @@ namespace ExpITConditionalLab
                     double taxOwed = 0;
                     
                     //check whether the income meets each bracket level in turn
-                    //use of either ">=" or ">" in the test both result in valid output,
+                    //use of either ">=" or ">" in the tests both result in valid output,
                     //but note that using ">=" will result in (very slightly) less  
                     //computation, specifically when income matches one of the bracket levels
                     if (income >= 75000)
                     {
-                        //base tax on 75000 is 9000 (1000 + 3000 + 5000)
+                        //base tax on $75,000 is 9000 (1000 + 3000 + 5000)
                         //add that to the marginal tax on income over $75000 at 35%
                         taxOwed = 9000 + (double)(income - 75000) * 0.35;
                     } else if (income >= 50000)
                     {
-                        //base tax on 50000 is 4000 (1000 + 3000)
+                        //base tax on $50,000 is 4000 (1000 + 3000)
                         //add that to the marginal tax on income over $50000 at 20%
                         taxOwed = 4000 + (double)(income - 50000) * 0.20;
                     }
                     else if (income >= 20000)
                     {
-                        //base tax on 20000 is 1000
+                        //base tax on $20,000 is 1000
                         //add that to the marginal tax on income over $20000 at 10%
                         taxOwed = 1000 + (double)(income - 20000) * 0.10;
                     }
@@ -90,6 +86,7 @@ namespace ExpITConditionalLab
                         taxOwed = (double)(income) * 0.05;
                     }
 
+                    //report calculated tax to the user
                     Console.WriteLine();
                     Console.WriteLine("Tax owed is {0:c}.", taxOwed);
                 }
