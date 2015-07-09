@@ -1,6 +1,5 @@
-c:\users\cheryl\documents\visual studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\bin\Debug\ExpITConditionalLab.exe.config
-c:\users\cheryl\documents\visual studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\bin\Debug\ExpITConditionalLab.exe
-c:\users\cheryl\documents\visual studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\bin\Debug\ExpITConditionalLab.pdb
-c:\users\cheryl\documents\visual studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\obj\Debug\ExpITConditionalLab.csprojResolveAssemblyReference.cache
-c:\users\cheryl\documents\visual studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\obj\Debug\ExpITConditionalLab.exe
-c:\users\cheryl\documents\visual studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\obj\Debug\ExpITConditionalLab.pdb
+C:\Users\Cheryl\Documents\Visual Studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\bin\Debug\ExpITConditionalLab.exe.config
+C:\Users\Cheryl\Documents\Visual Studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\bin\Debug\ExpITConditionalLab.exe
+C:\Users\Cheryl\Documents\Visual Studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\bin\Debug\ExpITConditionalLab.pdb
+C:\Users\Cheryl\Documents\Visual Studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\obj\Debug\ExpITConditionalLab.exe
+C:\Users\Cheryl\Documents\Visual Studio 2013\Projects\ExpITConditionalLab\ExpITConditionalLab\obj\Debug\ExpITConditionalLab.pdb

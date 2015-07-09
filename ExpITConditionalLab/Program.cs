@@ -31,7 +31,7 @@ namespace ExpITConditionalLab
             if (args.Length < 1)
             {
                 //no arguments were passed in
-                Console.WriteLine("Sorry, I didn't get income as an argument in whole dollars.");
+                Console.WriteLine("Sorry, I didn't get income as an argument in positive whole dollars.");
             }
             else
             {
@@ -44,7 +44,16 @@ namespace ExpITConditionalLab
                 if (!(Int32.TryParse(args[0], out income)))
                 {
                     //unable to parse a number from (first) argument
-                    Console.WriteLine("Sorry, I didn't get a recognizaeble income as an argument.");               }
+                    Console.WriteLine("Sorry, unable to retrieve a number argument.  Please try again.");               }
+                //else if  (income < 0)
+                //{
+                //    //negative number parsed
+                //    Console.WriteLine("Sorry, negative income is not a valid input.  Please try again."); 
+                //
+                //    //Upon testing, it appears that when a negative number is the (first) argument,
+                //    //it is being parsed as a positive number.
+                //    //Have tested so far only using debug
+                //}
                 else
                 {
                     //actual recognized input is now stored in income
@@ -55,6 +64,9 @@ namespace ExpITConditionalLab
                     double taxOwed = 0;
                     
                     //check whether the income meets each bracket level in turn
+                    //use of either ">=" or ">" in the test both result in valid output,
+                    //but note that using ">=" will result in (very slightly) less  
+                    //computation, specifically when income matches one of the bracket levels
                     if (income >= 75000)
                     {
                         //base tax on 75000 is 9000 (1000 + 3000 + 5000)
